@@ -10,6 +10,7 @@ Mail : lpabion <AT> gmail.com
 #include "main.h"
 #include "menu.h"
 #include "input_validator.h"
+#include "file_management.h"
 
 
 
@@ -29,15 +30,7 @@ int main(int argc, char *argv[])
 
     show_menu_header("Delimited Text File Manager (D.T.F.M.) version 0.0.2", "");
 
-    if (input_is_valid(test, asciiLetters))
-    {
-        printf("Test OK\n");
-    }
-
-    else
-    {
-        printf("Test failed\n");
-    }
+    printf("Number of command line arguments : %d\n", argc);
 
     getchar();
     return 0;
